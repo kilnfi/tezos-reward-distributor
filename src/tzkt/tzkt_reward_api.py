@@ -27,7 +27,8 @@ class TzKTRewardApiImpl(RewardApi):
             address=self.baking_address, cycle=cycle, fetch_delegators=True
         )
 
-        delegate_staking_balance = split["ownDelegatedBalance"] + split["externalDelegatedBalance"]
+        # External stakers will get their rewards directly, but we get rewards for our own stake so take that into account as well
+        delegate_staking_balance = split["ownDelegatedBalance"] + split["externalDelegatedBalance"] + split["ownStakedBalance"]
 
         # calculate estimated rewards
         num_blocks = split["blocks"] + split["missedBlocks"] + split["futureBlocks"]
