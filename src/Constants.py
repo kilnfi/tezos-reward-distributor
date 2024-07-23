@@ -87,9 +87,9 @@ DEFAULT_NETWORK_CONFIG_MAP = {
     "MAINNET": {
         # General
         "NAME": "MAINNET",
-        "PRESERVED_CYCLES": 5,
-        "MINIMAL_BLOCK_DELAY": 15,
-        "BLOCKS_PER_CYCLE": 16384,
+        "PRESERVED_CYCLES": 2,
+        "MINIMAL_BLOCK_DELAY": 10,
+        "BLOCKS_PER_CYCLE": 24576,
         "BLOCKS_PER_STAKE_SNAPSHOT": 1024,
         # Consensus
         "CONSENSUS_COMMITTEE_SIZE": 7000,
@@ -107,8 +107,8 @@ DEFAULT_NETWORK_CONFIG_MAP = {
         # General
         "NAME": CURRENT_TESTNET,
         "PRESERVED_CYCLES": 3,
-        "MINIMAL_BLOCK_DELAY": 8,
-        "BLOCKS_PER_CYCLE": 8192,
+        "MINIMAL_BLOCK_DELAY": 5,
+        "BLOCKS_PER_CYCLE": 12288,
         "BLOCKS_PER_STAKE_SNAPSHOT": 512,
         # Consensus
         "CONSENSUS_COMMITTEE_SIZE": 7000,
